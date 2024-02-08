@@ -1,0 +1,82 @@
+/*global*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    margin-right: 1rem;
+}
+
+/*utilities*/
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+/*header*/
+.site-init{
+    background-color: white;
+    height: 15rem;
+    background-image: url(https://getwallpapers.com/wallpaper/full/9/8/a/394963.jpg);
+    background-size: cover;
+    height: 20vh;
+
+}
+
+/*main*/
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*welcome*/
+.welcome-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.welcome-img{
+    display: flex;
+    justify-content: left;
+    width: 40rem;
+    border-radius: 40px;
+}
+.welcome-img2{
+    display: flex;
+    justify-content: right;
+    width: 40rem;
+    border-radius: 40px;
+}
+.welcome.text{
+    display: flex;
+    justify-content: center;
+}
+
+/*services*/
+
+/*footer*/
+.site-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    background-color: rgb(205, 222, 241);
+    color: black;
+}
+/*
+#FF8484
+#231651
+#2374AB
+/*
+
