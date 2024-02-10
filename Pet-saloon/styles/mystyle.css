@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: caveat;
 }
 img{
     max-width: 100%;
@@ -16,12 +16,13 @@ a{
     margin-right: 1rem;
 }
 
+
 /*utilities*/
 .flex-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 8rem;
+    height: 6rem;
 }
 
 /*header*/
@@ -30,7 +31,7 @@ a{
     height: 15rem;
     background-image: url(https://getwallpapers.com/wallpaper/full/9/8/a/394963.jpg);
     background-size: cover;
-    height: 20vh;
+    height: 11vh;
 
 }
 
@@ -73,6 +74,19 @@ a{
     height: 8rem;
     background-color: rgb(205, 222, 241);
     color: black;
+}
+
+#pets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.petCard{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 1rem;
 }
 /*
 #FF8484

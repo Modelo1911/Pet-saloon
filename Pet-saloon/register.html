@@ -31,7 +31,7 @@
             <div class="row mb-3">
                 <label for="colFormLabel" class="col-sm-2 col-form-label">Age:</label>
                 <div class="col-sm-10"></div>
-                <input type="text" class="form-control" id="txtName">
+                <input type="text" class="form-control" id="txtAge">
                 </div>
             </div>
             <div class="row mb-3">
@@ -40,10 +40,28 @@
                 <input type="text" class="form-control" id="txtGender">
                 </div>
             </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Breed:</label>
+                <div class="col-sm-10"></div>
+                <input type="text" class="form-control" id="txtBreed">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Service:</label>
+                <div class="col-sm-10"></div>
+                <input type="text" class="form-control" id="txtService">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Type:</label>
+                <div class="col-sm-10"></div>
+                <input type="text" class="form-control" id="txtType">
+                </div>
+            </div>
 
         </form>
         <div>
-            <button type="button" class="btn btn-success" onclick="register()">Enter</button>
+            <button type="button" class="btn btn-success" onclick="register();">Enter</button>
         </div>
 
         <h2>Registered pets <span id="totalPets"></span></h2>
@@ -55,7 +73,8 @@
         <p id="info">This</p>      
     </footer>
 
-
+<script src="./scripts/info.js"></script>
+<script src="./scripts/display.js"></script>
 <script src="./scripts/register.js"></script>
 </body>
 </html>

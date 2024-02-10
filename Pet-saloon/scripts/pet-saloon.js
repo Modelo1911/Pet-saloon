@@ -38,26 +38,6 @@ function calculateProfits(){
 calculateProfits();
 
 
-{
-    name:"Butterball",
-    age:3,
-    gender:"Male",
-    service:"Bath", 
-    breed:"Golden Retiever"
-},
-{
-    name: "Buzball",
-    age: 8,
-    gender:"female",
-    service: "Cat Grooming",
-    breed: "Calico American Short Hair"
-},
-{
-    name:"Beatbox",
-    age:1,
-    gender:"Female",
-    service:"Vaccine",
-    breed:"Orange Munchkin"
-}
+
 
     
