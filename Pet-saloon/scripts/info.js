@@ -13,7 +13,7 @@ let salon={//object
 
 function displayFooterInfo(){
     document.getElementById("info").innerHTML=`
-    <p> Welcome to the ${salon.name}. We located on ${salon.address.street} ${salon.address.number} ${salon.address.zip}</p>
+    <p> Welcome to the ${salon.name}. We are located on ${salon.address.street} ${salon.address.number} ${salon.address.zip}</p>
     `;
 }
 

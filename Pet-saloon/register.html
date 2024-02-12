@@ -20,7 +20,9 @@
     </header>
     <main class="">
         <h2>Register a new pet</h2>
-
+        <div id="notifications" class="hidden">
+            <p>Wrong</p>
+        </div>
         <form class="container">
             <div class="row mb-3">
                 <label for="colFormLabel" class="col-sm-2 col-form-label">Name:</label>
@@ -31,13 +33,16 @@
             <div class="row mb-3">
                 <label for="colFormLabel" class="col-sm-2 col-form-label">Age:</label>
                 <div class="col-sm-10"></div>
-                <input type="text" class="form-control" id="txtAge">
+                <input type="number" class="form-control" id="txtAge">
                 </div>
             </div>
-            <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Gender:</label>
-                <div class="col-sm-10"></div>
-                <input type="text" class="form-control" id="txtGender">
+            <div>
+                <label>Gender:</label>
+                <div>
+                <select id="txtGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
                 </div>
             </div>
             <div class="row mb-3">
@@ -46,10 +51,17 @@
                 <input type="text" class="form-control" id="txtBreed">
                 </div>
             </div>
-            <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Service:</label>
-                <div class="col-sm-10"></div>
-                <input type="text" class="form-control" id="txtService">
+            <div>
+                <label>Service:</label>
+                <div>
+                <select id="txtService">
+                    <option value="grooming">Grooming</option>
+                    <option value="bath">Bath</option>
+                    <option value="nail-clipping">Nail Clipping</option>
+                    <option value="haircut">Hair cut</option>
+                    <option value="vaccine">Vaccine</option>
+                    <option value="ear-cleaning">Ear Cleaning</option>
+                </select>
                 </div>
             </div>
             <div class="row mb-3">
@@ -58,10 +70,21 @@
                 <input type="text" class="form-control" id="txtType">
                 </div>
             </div>
+            <div>
+                <label>Payment:</label>
+                <div>
+                <select id="txtPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit</option>
+                    <option value="check">Check</option>
+                    <option value="honor">Honor System</option>
+                </select>
+                </div>
+            </div>
 
         </form>
         <div>
-            <button type="button" class="btn btn-success" onclick="register();">Enter</button>
+            <button type="button" class="btn btn-success btn-class" onclick="register();">Enter</button>
         </div>
 
         <h2>Registered pets <span id="totalPets"></span></h2>
@@ -70,7 +93,7 @@
     </main>
 
     <footer class="site-footer">
-        <p id="info">This</p>      
+        <p id="info"></p>      
     </footer>
 
 <script src="./scripts/info.js"></script>

@@ -3,9 +3,6 @@
     padding: 0;
     margin: 0;
 }
-body{
-    font-family: caveat;
-}
 img{
     max-width: 100%;
 }
@@ -63,6 +60,17 @@ a{
     display: flex;
     justify-content: center;
 }
+.btn-class{
+    margin-left: 30rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*services*/
 
@@ -72,10 +80,10 @@ a{
     justify-content: space-around;
     align-items: center;
     height: 8rem;
-    background-color: rgb(205, 222, 241);
+    background-image: url(https://getwallpapers.com/wallpaper/full/9/8/a/394963.jpg);
     color: black;
 }
-
+/*cards*/
 #pets{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -84,9 +92,24 @@ a{
 }
 
 .petCard{
-    background-color: aliceblue;
+    background-color: rgb(152, 199, 241);
     border-radius: 5px;
     padding: 1rem;
+    margin-right: 12rem;
+    margin-left: 11rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.alert-error{
+    background-color: rgb(226, 126, 126);
+}
+
+.hidden{
+    display: none;
+}
+.success{
+    background-color: rgb(88, 232, 88);
 }
 /*
 #FF8484
