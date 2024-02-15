@@ -8,9 +8,14 @@ img{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 .menu{
     margin-right: 1rem;
+    color: white;
+}
+.main{
+    background-image: url(https://th.bing.com/th/id/OIP.o_S14ETJCAnEW_6gqrVutQHaHa?rs=1&pid=ImgDetMain);
 }
 
 
@@ -24,9 +29,9 @@ a{
 
 /*header*/
 .site-init{
-    background-color: white;
+    background-color: black;
     height: 15rem;
-    background-image: url(https://getwallpapers.com/wallpaper/full/9/8/a/394963.jpg);
+    background-image: url(https://cdn.slidemodel.com/wp-content/uploads/7382-01-duotone-gradients-powerpoint-templates-16x9-4.jpg);
     background-size: cover;
     height: 11vh;
 
@@ -72,6 +77,13 @@ a{
     align-items: center;
 }
 
+.label{
+    background-color: rgb(247, 172, 223);
+    background-size: cover;
+    border-radius: auto;
+    color: white;
+}
+
 /*services*/
 
 /*footer*/
@@ -80,7 +92,7 @@ a{
     justify-content: space-around;
     align-items: center;
     height: 8rem;
-    background-image: url(https://getwallpapers.com/wallpaper/full/9/8/a/394963.jpg);
+    background-image: url(https://cdn.slidemodel.com/wp-content/uploads/7382-01-duotone-gradients-powerpoint-templates-16x9-4.jpg);
     color: black;
 }
 /*cards*/
@@ -92,7 +104,7 @@ a{
 }
 
 .petCard{
-    background-color: rgb(152, 199, 241);
+    background-color: rgb(247, 172, 223);
     border-radius: 5px;
     padding: 1rem;
     margin-right: 12rem;

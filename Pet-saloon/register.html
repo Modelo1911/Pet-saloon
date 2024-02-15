@@ -18,26 +18,26 @@
             </nav>
         </div>
     </header>
-    <main class="">
+    <main class="main">
         <h2>Register a new pet</h2>
-        <div id="notifications" class="hidden">
-            <p>Wrong</p>
-        </div>
         <form class="container">
+            <div id="notifications" class="hidden">
+            <p>Wrong</p>
+            </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Name:</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label label" >Name:</label>
                 <div class="col-sm-10"></div>
                 <input type="text" class="form-control" id="txtName">
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Age:</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label label">Age:</label>
                 <div class="col-sm-10"></div>
                 <input type="number" class="form-control" id="txtAge">
                 </div>
             </div>
             <div>
-                <label>Gender:</label>
+                <label class="label">Gender:</label>
                 <div>
                 <select id="txtGender">
                     <option value="male">Male</option>
@@ -46,32 +46,36 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Breed:</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label label">Breed:</label>
                 <div class="col-sm-10"></div>
                 <input type="text" class="form-control" id="txtBreed">
                 </div>
             </div>
             <div>
-                <label>Service:</label>
+                <label class="label">Service:</label>
                 <div>
                 <select id="txtService">
                     <option value="grooming">Grooming</option>
                     <option value="bath">Bath</option>
+                    <option value="self-wash">Self Washing station</option>
                     <option value="nail-clipping">Nail Clipping</option>
                     <option value="haircut">Hair cut</option>
                     <option value="vaccine">Vaccine</option>
                     <option value="ear-cleaning">Ear Cleaning</option>
+                    <option value="de-shed">De-shedding</option>
+                    <option value="teeth-cleaning">Teeth Cleaning</option>
+                    <option value="de-skunk">De-skunking</option>
                 </select>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">Type:</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label label">Type:</label>
                 <div class="col-sm-10"></div>
                 <input type="text" class="form-control" id="txtType">
                 </div>
             </div>
             <div>
-                <label>Payment:</label>
+                <label class="label">Payment:</label>
                 <div>
                 <select id="txtPayment">
                     <option value="cash">Cash</option>

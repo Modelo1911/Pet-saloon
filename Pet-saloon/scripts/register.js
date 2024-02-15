@@ -1,3 +1,4 @@
+let petID=0;
 //constructor
 function Pet(n,a,g,b,s,t,p){
     this.name=n;
@@ -7,6 +8,7 @@ function Pet(n,a,g,b,s,t,p){
     this.service=s;
     this.type=t;
     this.payment=p
+    this.id=petID++;//this will add an internal ID
 }
 
 
@@ -29,13 +31,14 @@ function isValid(aPet){
     let validation=true;
     //clear the style
     //document.querySelectorAll("inputs");
-    getE("txtName").classList.remove("alert-error")
-    getE("txtAge").classList.remove("alert-error")
-    getE("txtGender").classList.remove("alert-error")
-    getE("txtBreed").classList.remove("alert-error")
-    getE("txtService").classList.remove("alert-error")
-    getE("txtType").classList.remove("alert-error")
+    getE("txtName").classList.remove("alert-error");
+    getE("txtAge").classList.remove("alert-error");
+    getE("txtGender").classList.remove("alert-error");
+    getE("txtBreed").classList.remove("alert-error");
+    getE("txtService").classList.remove("alert-error");
+    getE("txtType").classList.remove("alert-error");
     getE("txtPayment").classList.remove("alert-error")
+
     if(aPet.name==""){
         //the part is not valid
         validation=false;
@@ -65,11 +68,10 @@ function isValid(aPet){
         validation=false;
         getE("txtPayment").classList.add("alert-error");
     }
-
     return validation;
 }
 
-function showNotifications(type,msg){
+function showNotifications(msg,type){
     getE("notifications").classList.remove("hidden");
     getE("notifications").innerHTML=`<p class="${type}">${msg}</p>`;
 
@@ -97,15 +99,28 @@ if(isValid(newPet)==true){
     inputService.value="";
     inputType.value="";
     inputPayment.value="";
-        
+    
+        showNotifications("Successful Registration","success");
     }else{
         showNotifications("Please fill in all fields","alert-error");
     }
 }
-
+function deletePet(petID){
+    let deleteIndex;//to get the index of the array (position of obj)
+    for(let i=0;i<salon.pets.length;i++){
+        let pet = salon.pets[i];
+        if(pet.id==petID){
+            deleteIndex=i;
+            break;
+        }
+    }
+    getE(petID).remove();//remove from html
+    salon.pets.splice(deleteIndex,1);//remove the pet from the array
+}
 
 function init(){
 // creating predefined odjects
+
 let pet1=new Pet("Butterball",3,"Male","Golden Retriever","Bath","Dog","Check");
 let pet2=new Pet("Daisy",8,"Female","Calico","Vaccine","Cat","Cash");
 let pet3=new Pet("Beatbox",1,"Female","Taby","Bath","Cat","Credit");

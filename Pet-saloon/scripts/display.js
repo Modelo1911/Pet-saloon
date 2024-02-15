@@ -13,16 +13,20 @@ function displayPetCards(){
     for(let i=0;i<salon.pets.length;i++){
         let pet = salon.pets[i];
         card+=`
-        <div class="petCard">
-            <p>Name: ${pet.name}</p>
-            <p>Age: ${pet.age}</p>
-            <p>Gender: ${pet.gender}</p>
-            <p>Breed: ${pet.breed}</p>
-            <p>Service: ${pet.service}</p>
-            <p>Type: ${pet.type}</p>
-            <p>Payment: ${pet.payment}</p>
-        </div>       
-    `;
+            <div id="${pet.id}" class="petCard">
+                <p>Name: ${pet.name}</p>
+                <p>Age: ${pet.age}</p>
+                <p>Gender: ${pet.gender}</p>
+                <p>Breed: ${pet.breed}</p>
+                <p>Service: ${pet.service}</p>
+                <p>Type: ${pet.type}</p>
+                <p>Payment: ${pet.payment}</p>
+                <button onclick="deletePet(${pet.id})">Delete</buttom>
+            </div>       
+        `;
     }
     getE('pets').innerHTML=card;
+}
+function displayPetTable(){
+    
 }
