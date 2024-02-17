@@ -1,5 +1,35 @@
-document.getElementById("Services");//Using javascript
-$("#services");//using jquery
+var services=[];//this is an array
 
-//getting the value
-let inputService=$("#txtService").val();
+$(document).ready(function(){
+    console.log("Services Page");
+
+    $("#btnService").click(addService);
+
+    displayItems(services);
+
+});
+
+function Service(description,price){
+    this.description=description;
+    this.price=price;
+}
+
+function addService(){
+    let inputService = $("#txtService").val();
+    let inputPrice = $("#txtPrice").val();
+    let newService = new Service(inputService,inputPrice);
+    services.push(newService);
+    saveItem(newService);
+    displayItems(services);
+}
+
+function displayItems(items){//items is the object, inside the () is the array aswell
+    let htmlList=$("#services");
+    htmlList.html("");
+    let li;
+    for(let i=0;i<items.length;i++){
+        let item=items[i];
+        li=`<li>${item.description} -$ ${item.price}</li>`;//description is the property
+        htmlList.append(li);
+    }
+}

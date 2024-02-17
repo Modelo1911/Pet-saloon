@@ -38,6 +38,13 @@ function calculateProfits(){
 calculateProfits();
 
 
+//var: will declare a variable through out the page
+//let: will declare a variable in its specific code block
+//const: will lock a variable and keep it there
+//this: refers to an object that is executing the code it is attached to
 
+//JSON: An object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
 
-    
+//JSON.stringify: Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+
+//JSON.parse: Converts a JavaScript Object Notation (JSON) string into an object.

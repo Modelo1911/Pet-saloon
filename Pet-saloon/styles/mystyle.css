@@ -105,7 +105,7 @@ a{
 
 .petCard{
     background-color: rgb(247, 172, 223);
-    border-radius: 5px;
+    border-radius:2.7rem;
     padding: 1rem;
     margin-right: 12rem;
     margin-left: 11rem;
@@ -122,6 +122,10 @@ a{
 }
 .success{
     background-color: rgb(88, 232, 88);
+}
+
+.service-form{
+    
 }
 /*
 #FF8484
