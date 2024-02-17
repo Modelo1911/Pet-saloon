@@ -33,3 +33,4 @@ function displayItems(items){//items is the object, inside the () is the array a
         htmlList.append(li);
     }
 }
+
