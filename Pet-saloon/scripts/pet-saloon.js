@@ -38,6 +38,16 @@ function calculateProfits(){
 calculateProfits();
 
 
+//function showNotifications(msg,type){
+    getE("notifications").classList.remove("hidden");
+    getE("notifications").innerHTML=`<p class="${type}">${msg}</p>`;
+
+    setTimeout(function(){
+        getE("notifications").classList.add("hidden");
+    },3000);
+}
+
+
 //var: will declare a variable through out the page
 //let: will declare a variable in its specific code block
 //const: will lock a variable and keep it there
